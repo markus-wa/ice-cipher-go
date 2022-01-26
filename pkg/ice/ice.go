@@ -226,8 +226,8 @@ func (k keyImpl) Encrypt(data, enc []byte) {
 	var l, r uint64
 
 	for i := 0; i < 4; i++ {
-		l |= uint64(data[i]&0xff) << (24 - i*8)
-		r |= uint64(data[i+4]&0xff) << (24 - i*8)
+		l |= uint64(data[i]&0xff) << uint(24-i*8)
+		r |= uint64(data[i+4]&0xff) << uint(24-i*8)
 	}
 
 	for i := 0; i < k.rounds; i += 2 {
@@ -248,8 +248,8 @@ func (k keyImpl) Decrypt(enc, dec []byte) {
 	var l, r uint64
 
 	for i := 0; i < 4; i++ {
-		l |= uint64(enc[i]&0xff) << (24 - i*8)
-		r |= uint64(enc[i+4]&0xff) << (24 - i*8)
+		l |= uint64(enc[i]&0xff) << uint(24-i*8)
+		r |= uint64(enc[i+4]&0xff) << uint(24-i*8)
 	}
 
 	for i := k.rounds - 1; i > 0; i -= 2 {
