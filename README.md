@@ -4,6 +4,10 @@ An implementation of the [Information Concealment Engine](https://en.wikipedia.o
 
 Takes a 64 bit (8 byte) key, 64 bits of data and returns the encrypted/decrypted 64 bit result.
 
+_Ice Ice Baby_
+
+<img src="https://user-images.githubusercontent.com/5138316/151227751-f2772f85-c311-41b8-99b4-6cc73379902c.png" alt="ice ice baby" width="300"/>
+
 ### Go Get
 
     go get github.com/markus-wa/ice-cipher-go/pkg/ice
