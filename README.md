@@ -16,7 +16,7 @@ _Ice Ice Baby_
 
 example from `example/main.go`
 
-```
+```go
 package main
 
 import (
