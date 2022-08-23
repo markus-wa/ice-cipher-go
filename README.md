@@ -33,7 +33,7 @@ func main() {
     
 	// encrypt 8 bytes
 	encrypted := make([]byte, 8)
-    k.Encrypt(toEncrypt, encrypted)
+	k.Encrypt(toEncrypt, encrypted)
     
 	fmt.Println("encrypted:", encrypted)
     
@@ -44,7 +44,7 @@ func main() {
 	fmt.Println("decrypted:", decrypted)
 	
 	// utility function to decrypt larger arrays
-    decryptedTwice := k.DecryptAll(append(encrypted, encrypted...))
+	decryptedTwice := k.DecryptAll(append(encrypted, encrypted...))
 
 	fmt.Println("decrypted twice:", decryptedTwice)
 }
