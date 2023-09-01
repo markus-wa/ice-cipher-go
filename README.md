@@ -60,3 +60,6 @@ encrypted: [88 76 140 254 103 42 211 107]
 decrypted: [17 34 51 68 85 102 119 136]
 decrypted twice: [17 34 51 68 85 102 119 136 17 34 51 68 85 102 119 136]
 ```
+## License
+
+This project is licensed under the [MIT license](LICENSE.md).
